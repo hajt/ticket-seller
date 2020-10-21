@@ -1,0 +1,5 @@
+db.sqlite3
+api/migrations/
+api/__pycache__
+utils.py
+project/__pycache__
