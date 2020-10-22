@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from api.models import (
     Event,
-    TicketKind,
+    TicketInfo,
     Ticket,
     User,
     Reservation,
@@ -12,19 +12,21 @@ from api.models import (
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
-        fields = ['id', 'name', 'date_time']
+        fields = ['id', 'name', 'date']
 
 
-class TicketKindSerializer(serializers.ModelSerializer):
+class TicketInfoSerializer(serializers.ModelSerializer):
+    event = EventSerializer(read_only=True)
+
     class Meta:
-        model = TicketKind
+        model = TicketInfo
         fields = ['id', 'event', 'kind', 'price', 'quantity']
 
 
 class TicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ticket
-        fields = ['id', 'ticket_kind', 'status']     
+        fields = ['id', 'info']
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -36,7 +38,7 @@ class UserSerializer(serializers.ModelSerializer):
 class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
-        fields = ['id', 'ticket', 'user', 'reservation_time', 'expiration_time']
+        fields = ['id', 'ticket', 'user', 'create_time', 'expire_time']
 
 
 class PurchaseSerializer(serializers.ModelSerializer):
