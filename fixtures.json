@@ -1,546 +1,18 @@
 [
 {
-    "model": "auth.permission",
-    "pk": 1,
-    "fields": {
-        "name": "Can add log entry",
-        "content_type": 1,
-        "codename": "add_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 2,
-    "fields": {
-        "name": "Can change log entry",
-        "content_type": 1,
-        "codename": "change_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 3,
-    "fields": {
-        "name": "Can delete log entry",
-        "content_type": 1,
-        "codename": "delete_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 4,
-    "fields": {
-        "name": "Can view log entry",
-        "content_type": 1,
-        "codename": "view_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 5,
-    "fields": {
-        "name": "Can add permission",
-        "content_type": 2,
-        "codename": "add_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 6,
-    "fields": {
-        "name": "Can change permission",
-        "content_type": 2,
-        "codename": "change_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 7,
-    "fields": {
-        "name": "Can delete permission",
-        "content_type": 2,
-        "codename": "delete_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 8,
-    "fields": {
-        "name": "Can view permission",
-        "content_type": 2,
-        "codename": "view_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 9,
-    "fields": {
-        "name": "Can add group",
-        "content_type": 3,
-        "codename": "add_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 10,
-    "fields": {
-        "name": "Can change group",
-        "content_type": 3,
-        "codename": "change_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 11,
-    "fields": {
-        "name": "Can delete group",
-        "content_type": 3,
-        "codename": "delete_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 12,
-    "fields": {
-        "name": "Can view group",
-        "content_type": 3,
-        "codename": "view_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 13,
-    "fields": {
-        "name": "Can add user",
-        "content_type": 4,
-        "codename": "add_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 14,
-    "fields": {
-        "name": "Can change user",
-        "content_type": 4,
-        "codename": "change_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 15,
-    "fields": {
-        "name": "Can delete user",
-        "content_type": 4,
-        "codename": "delete_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 16,
-    "fields": {
-        "name": "Can view user",
-        "content_type": 4,
-        "codename": "view_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 17,
-    "fields": {
-        "name": "Can add content type",
-        "content_type": 5,
-        "codename": "add_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 18,
-    "fields": {
-        "name": "Can change content type",
-        "content_type": 5,
-        "codename": "change_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 19,
-    "fields": {
-        "name": "Can delete content type",
-        "content_type": 5,
-        "codename": "delete_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 20,
-    "fields": {
-        "name": "Can view content type",
-        "content_type": 5,
-        "codename": "view_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 21,
-    "fields": {
-        "name": "Can add session",
-        "content_type": 6,
-        "codename": "add_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 22,
-    "fields": {
-        "name": "Can change session",
-        "content_type": 6,
-        "codename": "change_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 23,
-    "fields": {
-        "name": "Can delete session",
-        "content_type": 6,
-        "codename": "delete_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 24,
-    "fields": {
-        "name": "Can view session",
-        "content_type": 6,
-        "codename": "view_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 25,
-    "fields": {
-        "name": "Can add ticket",
-        "content_type": 7,
-        "codename": "add_ticket"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 26,
-    "fields": {
-        "name": "Can change ticket",
-        "content_type": 7,
-        "codename": "change_ticket"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 27,
-    "fields": {
-        "name": "Can delete ticket",
-        "content_type": 7,
-        "codename": "delete_ticket"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 28,
-    "fields": {
-        "name": "Can view ticket",
-        "content_type": 7,
-        "codename": "view_ticket"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 29,
-    "fields": {
-        "name": "Can add ticket kind",
-        "content_type": 8,
-        "codename": "add_ticketkind"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 30,
-    "fields": {
-        "name": "Can change ticket kind",
-        "content_type": 8,
-        "codename": "change_ticketkind"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 31,
-    "fields": {
-        "name": "Can delete ticket kind",
-        "content_type": 8,
-        "codename": "delete_ticketkind"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 32,
-    "fields": {
-        "name": "Can view ticket kind",
-        "content_type": 8,
-        "codename": "view_ticketkind"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 33,
-    "fields": {
-        "name": "Can add event",
-        "content_type": 9,
-        "codename": "add_event"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 34,
-    "fields": {
-        "name": "Can change event",
-        "content_type": 9,
-        "codename": "change_event"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 35,
-    "fields": {
-        "name": "Can delete event",
-        "content_type": 9,
-        "codename": "delete_event"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 36,
-    "fields": {
-        "name": "Can view event",
-        "content_type": 9,
-        "codename": "view_event"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 37,
-    "fields": {
-        "name": "Can add user",
-        "content_type": 10,
-        "codename": "add_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 38,
-    "fields": {
-        "name": "Can change user",
-        "content_type": 10,
-        "codename": "change_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 39,
-    "fields": {
-        "name": "Can delete user",
-        "content_type": 10,
-        "codename": "delete_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 40,
-    "fields": {
-        "name": "Can view user",
-        "content_type": 10,
-        "codename": "view_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 41,
-    "fields": {
-        "name": "Can add purchase",
-        "content_type": 11,
-        "codename": "add_purchase"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 42,
-    "fields": {
-        "name": "Can change purchase",
-        "content_type": 11,
-        "codename": "change_purchase"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 43,
-    "fields": {
-        "name": "Can delete purchase",
-        "content_type": 11,
-        "codename": "delete_purchase"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 44,
-    "fields": {
-        "name": "Can view purchase",
-        "content_type": 11,
-        "codename": "view_purchase"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 45,
-    "fields": {
-        "name": "Can add reservation",
-        "content_type": 12,
-        "codename": "add_reservation"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 46,
-    "fields": {
-        "name": "Can change reservation",
-        "content_type": 12,
-        "codename": "change_reservation"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 47,
-    "fields": {
-        "name": "Can delete reservation",
-        "content_type": 12,
-        "codename": "delete_reservation"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 48,
-    "fields": {
-        "name": "Can view reservation",
-        "content_type": 12,
-        "codename": "view_reservation"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 1,
-    "fields": {
-        "app_label": "admin",
-        "model": "logentry"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 2,
-    "fields": {
-        "app_label": "auth",
-        "model": "permission"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 3,
-    "fields": {
-        "app_label": "auth",
-        "model": "group"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 4,
-    "fields": {
-        "app_label": "auth",
-        "model": "user"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": {
-        "app_label": "contenttypes",
-        "model": "contenttype"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 6,
-    "fields": {
-        "app_label": "sessions",
-        "model": "session"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 7,
-    "fields": {
-        "app_label": "api",
-        "model": "ticket"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 8,
-    "fields": {
-        "app_label": "api",
-        "model": "ticketkind"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 9,
-    "fields": {
-        "app_label": "api",
-        "model": "event"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 10,
-    "fields": {
-        "app_label": "api",
-        "model": "user"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 11,
-    "fields": {
-        "app_label": "api",
-        "model": "purchase"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 12,
-    "fields": {
-        "app_label": "api",
-        "model": "reservation"
-    }
-},
-{
     "model": "api.event",
     "pk": 1,
-    "fields": {
-        "name": "Event Two",
-        "date_time": "2020-12-10T15:07:23.765Z"
-    }
-},
-{
-    "model": "api.event",
-    "pk": 2,
     "fields": {
         "name": "Event One",
-        "date_time": "2021-01-29T15:08:55.767Z"
+        "date": "2021-01-30T17:56:58.048Z"
+    }
+},
+{
+    "model": "api.event",
+    "pk": 2,
+    "fields": {
+        "name": "Event Two",
+        "date": "2020-12-11T17:56:59.104Z"
     }
 },
 {
@@ -548,11 +20,11 @@
     "pk": 3,
     "fields": {
         "name": "Event Three",
-        "date_time": "2020-11-05T15:09:18.005Z"
+        "date": "2020-11-18T17:57:02.749Z"
     }
 },
 {
-    "model": "api.ticketkind",
+    "model": "api.ticketinfo",
     "pk": 1,
     "fields": {
         "event": 1,
@@ -562,141 +34,1768 @@
     }
 },
 {
-    "model": "api.ticketkind",
+    "model": "api.ticketinfo",
     "pk": 2,
     "fields": {
         "event": 1,
-        "kind": "standard",
+        "kind": "Standard",
         "price": "10.00",
+        "quantity": 10
+    }
+},
+{
+    "model": "api.ticketinfo",
+    "pk": 3,
+    "fields": {
+        "event": 1,
+        "kind": "Cheap",
+        "price": "5.00",
         "quantity": 15
     }
 },
 {
-    "model": "api.ticketkind",
-    "pk": 3,
-    "fields": {
-        "event": 1,
-        "kind": "cheap",
-        "price": "5.00",
-        "quantity": 25
-    }
-},
-{
-    "model": "api.ticketkind",
+    "model": "api.ticketinfo",
     "pk": 4,
     "fields": {
-        "event": 1,
-        "kind": "VIP",
-        "price": "50.00",
-        "quantity": 50
-    }
-},
-{
-    "model": "api.ticketkind",
-    "pk": 5,
-    "fields": {
-        "event": 1,
-        "kind": "Normal",
-        "price": "35.50",
-        "quantity": 150
-    }
-},
-{
-    "model": "api.ticketkind",
-    "pk": 6,
-    "fields": {
-        "event": 3,
+        "event": 2,
         "kind": "Limited",
         "price": "99.99",
         "quantity": 3
     }
 },
 {
-    "model": "api.ticketkind",
-    "pk": 7,
+    "model": "api.ticketinfo",
+    "pk": 5,
     "fields": {
-        "event": 3,
+        "event": 2,
         "kind": "Standard",
         "price": "50.00",
-        "quantity": 37
+        "quantity": 17
     }
 },
 {
-    "model": "api.ticketkind",
+    "model": "api.ticketinfo",
+    "pk": 6,
+    "fields": {
+        "event": 2,
+        "kind": "Free",
+        "price": "0.00",
+        "quantity": 10
+    }
+},
+{
+    "model": "api.ticketinfo",
+    "pk": 7,
+    "fields": {
+        "event": 2,
+        "kind": "Premium",
+        "price": "100.00",
+        "quantity": 100
+    }
+},
+{
+    "model": "api.ticketinfo",
     "pk": 8,
     "fields": {
         "event": 3,
-        "kind": "Free",
-        "price": "0.00",
-        "quantity": 5
+        "kind": "VIP",
+        "price": "100.00",
+        "quantity": 10
     }
 },
 {
-    "model": "api.ticketkind",
+    "model": "api.ticketinfo",
     "pk": 9,
     "fields": {
         "event": 3,
-        "kind": "Premium",
-        "price": "100.00",
-        "quantity": 500
+        "kind": "Student",
+        "price": "64.99",
+        "quantity": 25
     }
 },
 {
-    "model": "api.ticketkind",
+    "model": "api.ticketinfo",
     "pk": 10,
     "fields": {
         "event": 3,
-        "kind": "Student",
-        "price": "40.00",
-        "quantity": 350
+        "kind": "Normal",
+        "price": "80.50",
+        "quantity": 40
     }
 },
 {
     "model": "api.ticket",
     "pk": 1,
     "fields": {
-        "ticket_kind": 10,
-        "status": ""
+        "info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 2,
     "fields": {
-        "ticket_kind": 1,
-        "status": ""
+        "info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 3,
     "fields": {
-        "ticket_kind": 1,
-        "status": ""
+        "info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 4,
     "fields": {
-        "ticket_kind": 1,
-        "status": ""
+        "info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 5,
     "fields": {
-        "ticket_kind": 1,
-        "status": ""
+        "info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 6,
     "fields": {
-        "ticket_kind": 1,
-        "status": ""
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 7,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 8,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 9,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 10,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 11,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 12,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 13,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 14,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 15,
+    "fields": {
+        "info": 2
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 16,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 17,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 18,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 19,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 20,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 21,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 22,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 23,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 24,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 25,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 26,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 27,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 28,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 29,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 30,
+    "fields": {
+        "info": 3
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 31,
+    "fields": {
+        "info": 4
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 32,
+    "fields": {
+        "info": 4
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 33,
+    "fields": {
+        "info": 4
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 34,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 35,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 36,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 37,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 38,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 39,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 40,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 41,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 42,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 43,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 44,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 45,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 46,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 47,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 48,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 49,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 50,
+    "fields": {
+        "info": 5
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 51,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 52,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 53,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 54,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 55,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 56,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 57,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 58,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 59,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 60,
+    "fields": {
+        "info": 6
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 61,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 62,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 63,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 64,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 65,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 66,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 67,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 68,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 69,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 70,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 71,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 72,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 73,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 74,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 75,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 76,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 77,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 78,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 79,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 80,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 81,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 82,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 83,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 84,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 85,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 86,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 87,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 88,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 89,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 90,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 91,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 92,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 93,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 94,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 95,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 96,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 97,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 98,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 99,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 100,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 101,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 102,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 103,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 104,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 105,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 106,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 107,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 108,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 109,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 110,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 111,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 112,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 113,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 114,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 115,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 116,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 117,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 118,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 119,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 120,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 121,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 122,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 123,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 124,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 125,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 126,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 127,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 128,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 129,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 130,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 131,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 132,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 133,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 134,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 135,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 136,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 137,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 138,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 139,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 140,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 141,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 142,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 143,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 144,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 145,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 146,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 147,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 148,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 149,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 150,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 151,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 152,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 153,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 154,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 155,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 156,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 157,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 158,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 159,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 160,
+    "fields": {
+        "info": 7
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 161,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 162,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 163,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 164,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 165,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 166,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 167,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 168,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 169,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 170,
+    "fields": {
+        "info": 8
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 171,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 172,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 173,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 174,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 175,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 176,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 177,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 178,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 179,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 180,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 181,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 182,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 183,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 184,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 185,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 186,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 187,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 188,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 189,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 190,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 191,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 192,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 193,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 194,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 195,
+    "fields": {
+        "info": 9
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 196,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 197,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 198,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 199,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 200,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 201,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 202,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 203,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 204,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 205,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 206,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 207,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 208,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 209,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 210,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 211,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 212,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 213,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 214,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 215,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 216,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 217,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 218,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 219,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 220,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 221,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 222,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 223,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 224,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 225,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 226,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 227,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 228,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 229,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 230,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 231,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 232,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 233,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 234,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 235,
+    "fields": {
+        "info": 10
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 1,
+    "fields": {
+        "ticket": 196,
+        "create_time": "2020-10-22T17:57:05.058Z",
+        "expire_time": "2020-10-22T18:12:05.058Z",
+        "is_paid": "False"
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 2,
+    "fields": {
+        "ticket": 235,
+        "create_time": "2020-10-22T17:57:05.094Z",
+        "expire_time": "2020-10-22T18:12:05.094Z",
+        "is_paid": "False"
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 3,
+    "fields": {
+        "ticket": 20,
+        "create_time": "2020-10-22T17:57:05.158Z",
+        "expire_time": "2020-10-22T18:12:05.158Z",
+        "is_paid": "False"
     }
 }
 ]

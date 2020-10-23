@@ -3,24 +3,31 @@ from api.models import (
     Event,
     TicketInfo,
     Ticket,
-    User,
     Reservation,
-    Purchase
 )
 
 
-class EventSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Event
-        fields = ['id', 'name', 'date']
-
-
 class TicketInfoSerializer(serializers.ModelSerializer):
-    event = EventSerializer(read_only=True)
+    # event = serializers.StringRelatedField(read_only=True)
+    # event = serializers.SlugRelatedField(read_only=True, slug_field='name')
+    # event = serializers.RelatedField(read_only=True, source='event')
+    # event = serializers.CharField(read_only=True, source='event.name') # WORK
+    event = serializers.ReadOnlyField(read_only=True, source='event.name') # WORK
 
+    available = serializers.IntegerField(source='_get_available_tickets_count', read_only=True)
+    
     class Meta:
         model = TicketInfo
-        fields = ['id', 'event', 'kind', 'price', 'quantity']
+        fields = ['id', 'kind', 'price', 'quantity', 'available', 'event']
+
+
+class EventSerializer(serializers.ModelSerializer):
+    tickets = TicketInfoSerializer(many=True, read_only=True)
+    
+    class Meta:
+        model = Event
+        fields = ['id', 'name', 'date', 'tickets']
+
 
 
 class TicketSerializer(serializers.ModelSerializer):
@@ -29,19 +36,7 @@ class TicketSerializer(serializers.ModelSerializer):
         fields = ['id', 'info']
 
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['id', 'name', 'email']
-
-
 class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
-        fields = ['id', 'ticket', 'user', 'create_time', 'expire_time']
-
-
-class PurchaseSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Purchase
-        fields = ['id', 'ticket', 'user']
+        fields = ['id', 'ticket', 'create_time', 'expire_time', 'is_paid']

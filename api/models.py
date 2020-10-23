@@ -19,7 +19,7 @@ class TicketInfo(models.Model):
     class Meta:
         ordering = ('kind', 'pk')
 
-    event = models.ForeignKey(Event, on_delete=models.PROTECT)
+    event = models.ForeignKey(Event, related_name='tickets', on_delete=models.PROTECT)
     kind = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     quantity = models.IntegerField(null=False, blank=False)
@@ -31,15 +31,15 @@ class TicketInfo(models.Model):
 
     def _get_available_tickets_count(self):
         """ Function which returns number of available tickets. """
-        return self.ticket_set.filter(reservation__isnull=True, purchase__isnull=True).count()
+        return self.ticket_set.filter(reservation__isnull=True).count()
 
-    def _get_sold_tickets_count(self):
-        """ Function which returns number of sold tickets. """
-        return self.ticket_set.filter(purchase__isnull=False).count()
+    # def _get_sold_tickets_count(self):
+    #     """ Function which returns number of sold tickets. """
+    #     return self.ticket_set.filter(purchase__isnull=False).count()
 
-    def _get_reserved_tickets_count(self):
-        """ Function which returns number of reserved tickets. """
-        return self.ticket_set.filter(reservation__isnull=False, purchase__isnull=True).count()
+    # def _get_reserved_tickets_count(self):
+    #     """ Function which returns number of reserved tickets. """
+    #     return self.ticket_set.filter(reservation__isnull=False, purchase__isnull=True).count()
 
     def _create_tickets(self):
         """ Function which creates related ticket objects in accordance
@@ -65,7 +65,6 @@ class Ticket(models.Model):
     info = models.ForeignKey(TicketInfo, on_delete=models.CASCADE)
 
     # rel One2One Reservation
-    # rel One2One Purchase
 
     def __str__(self):
         return f'{self.info}'
@@ -74,42 +73,17 @@ class Ticket(models.Model):
         return f"<Ticket(info='{self.info}')>"
 
 
-class User(models.Model):
-    name = models.CharField(max_length=50, null=False, blank=False)
-    email = models.EmailField(unique=True, null=False, blank=False)
-
-    # rel One2Many Reservation
-    # rel One2Many Purchase
-
-    def __str__(self):
-        return f'{self.name} {self.email}'
-
-    def __repr__(self):
-        return f"<User(name='{self.name}', email='{self.email}')>"
-
-
 class Reservation(models.Model):
     class Meta:
         ordering = ('create_time', 'pk')
 
-    ticket = models.OneToOneField(Ticket, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    ticket = models.OneToOneField(Ticket, on_delete=models.CASCADE, null=True, blank=True)
     create_time = models.DateTimeField(default=timezone.now)
     expire_time = models.DateTimeField(blank=True, null=True)
+    is_paid = models.BooleanField(default=False)
 
     def __str__(self):
-        return f'{self.ticket} {self.user} {self.create_time} {self.expire_time}'
+        return f'{self.ticket} {self.create_time} {self.expire_time} {self.is_paid}'
 
     def __repr__(self):
-        return f"<Reservation(ticket='{self.ticket}', user='{self.user}', create_time='{self.create_time}', expire_time='{self.expire_time}')>"
-
-
-class Purchase(models.Model):
-    ticket = models.OneToOneField(Ticket, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return f'{self.ticket} {self.user}'
-
-    def __repr__(self):
-        return f"<Purchase(ticket='{self.ticket}', user='{self.user}')>"
+        return f"<Reservation(ticket='{self.ticket}', create_time='{self.create_time}', expire_time='{self.expire_time}', is_paid='{self.is_paid}')>"
