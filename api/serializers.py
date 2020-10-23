@@ -1,4 +1,5 @@
 from rest_framework import serializers
+
 from api.models import (
     Event,
     TicketInfo,
@@ -7,26 +8,26 @@ from api.models import (
 )
 
 
-class TicketInfoSerializer(serializers.ModelSerializer):
-    # event = serializers.StringRelatedField(read_only=True)
-    # event = serializers.SlugRelatedField(read_only=True, slug_field='name')
-    # event = serializers.RelatedField(read_only=True, source='event')
-    # event = serializers.CharField(read_only=True, source='event.name') # WORK
-    event = serializers.ReadOnlyField(read_only=True, source='event.name') # WORK
-
-    available = serializers.IntegerField(source='_get_available_tickets_count', read_only=True)
-    
-    class Meta:
-        model = TicketInfo
-        fields = ['id', 'kind', 'price', 'quantity', 'available', 'event']
-
-
 class EventSerializer(serializers.ModelSerializer):
-    tickets = TicketInfoSerializer(many=True, read_only=True)
+    tickets = serializers.SlugRelatedField(slug_field='kind', many=True, read_only=True)
     
     class Meta:
         model = Event
-        fields = ['id', 'name', 'date', 'tickets']
+        fields = ['name', 'date', 'tickets']
+
+
+class TicketInfoSerializer(serializers.ModelSerializer):
+    # event = serializers.StringRelatedField(read_only=True) # WORK
+    # event = serializers.RelatedField(read_only=True, source='event') # NOT WORK
+    # event = serializers.CharField(read_only=True, source='event.name') # WORK
+    # event = serializers.ReadOnlyField(read_only=True, source='event.name') # WORK
+
+    event = serializers.SlugRelatedField(slug_field='name', read_only=True) # WORK
+    left = serializers.IntegerField(source='_get_available_tickets_count', read_only=True)
+
+    class Meta:
+        model = TicketInfo
+        fields = ['kind', 'event', 'price', 'quantity', 'left']
 
 
 
