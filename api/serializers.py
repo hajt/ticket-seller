@@ -1,11 +1,6 @@
 from rest_framework import serializers
 
-from api.models import (
-    Event,
-    TicketInfo,
-    Ticket,
-    Reservation,
-)
+from api.models import Event, TicketInfo, Ticket, Reservation
 
 
 class EventSerializer(serializers.ModelSerializer):
@@ -17,27 +12,28 @@ class EventSerializer(serializers.ModelSerializer):
 
 
 class TicketInfoSerializer(serializers.ModelSerializer):
-    # event = serializers.StringRelatedField(read_only=True) # WORK
-    # event = serializers.RelatedField(read_only=True, source='event') # NOT WORK
-    # event = serializers.CharField(read_only=True, source='event.name') # WORK
-    # event = serializers.ReadOnlyField(read_only=True, source='event.name') # WORK
-
-    event = serializers.SlugRelatedField(slug_field='name', read_only=True) # WORK
-    left = serializers.IntegerField(source='_get_available_tickets_count', read_only=True)
+    event = serializers.SlugRelatedField(slug_field='name', read_only=True)
+    left = serializers.IntegerField(source='get_available_tickets_count', read_only=True)
 
     class Meta:
         model = TicketInfo
         fields = ['kind', 'event', 'price', 'quantity', 'left']
 
 
-
 class TicketSerializer(serializers.ModelSerializer):
+    
     class Meta:
         model = Ticket
         fields = ['id', 'info']
 
 
 class ReservationSerializer(serializers.ModelSerializer):
+    is_valid = serializers.ReadOnlyField(source='check_is_valid')
+    event = serializers.ReadOnlyField(source='get_event_name')
+    kind = serializers.ReadOnlyField(source='get_ticket_kind')
+
     class Meta:
         model = Reservation
-        fields = ['id', 'ticket', 'create_time', 'expire_time', 'is_paid']
+        fields = ['event', 'kind', 'create_time', 'expire_time', 'is_paid', 'is_valid']
+
+        
