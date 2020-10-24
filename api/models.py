@@ -19,27 +19,27 @@ class TicketInfo(models.Model):
     class Meta:
         ordering = ('kind', 'pk')
 
-    event = models.ForeignKey(Event, related_name='tickets', on_delete=models.PROTECT)
     kind = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     quantity = models.IntegerField(null=False, blank=False)
+    event = models.ForeignKey(Event, related_name='tickets_info', on_delete=models.PROTECT)
 
     # rel One2Many Ticket
     def _get_total_tickets_count(self):
         """ Function which returns total number of related tickets objects. """
-        return self.ticket_set.all().count()
+        return self.tickets.all().count()
 
     def _get_available_tickets_count(self):
         """ Function which returns number of available tickets. """
-        return self.ticket_set.filter(reservation__isnull=True).count()
+        return self.tickets.filter(reservation__isnull=True).count()
 
     # def _get_sold_tickets_count(self):
     #     """ Function which returns number of sold tickets. """
-    #     return self.ticket_set.filter(purchase__isnull=False).count()
+    #     return self.tickets.filter(purchase__isnull=False).count()
 
     # def _get_reserved_tickets_count(self):
     #     """ Function which returns number of reserved tickets. """
-    #     return self.ticket_set.filter(reservation__isnull=False, purchase__isnull=True).count()
+    #     return self.tickets.filter(reservation__isnull=False, purchase__isnull=True).count()
 
     def _create_tickets(self):
         """ Function which creates related ticket objects in accordance
@@ -47,7 +47,7 @@ class TicketInfo(models.Model):
         tickets_total = self._get_total_tickets_count()
         if tickets_total < self.quantity:
             for _ in range(self.quantity-tickets_total):
-                ticket = Ticket(info=self)
+                ticket = Ticket(ticket_info=self)
                 ticket.save()
 
     def save(self, **kwargs):
@@ -55,32 +55,34 @@ class TicketInfo(models.Model):
         self._create_tickets()
 
     def __str__(self):
-        return f'{self.event} {self.kind} {self.price}'
+        return f"Ticket '{self.kind}' on Event: '{self.event.name}' Price: '{self.price}'"
 
     def __repr__(self):
         return f"<TicketInfo(event='{self.event}', kind='{self.kind}', price='{self.price}', quantity='{self.quantity}')>"
 
 
 class Ticket(models.Model):
-    info = models.ForeignKey(TicketInfo, on_delete=models.CASCADE)
+    ticket_info = models.ForeignKey(TicketInfo, related_name='tickets', on_delete=models.CASCADE)
 
     # rel One2One Reservation
 
     def __str__(self):
-        return f'{self.info}'
+        return f'{self.ticket_info}'
 
     def __repr__(self):
-        return f"<Ticket(info='{self.info}')>"
+        return f"<Ticket(ticket_info='{self.ticket_info}')>"
 
 
 class Reservation(models.Model):
     class Meta:
         ordering = ('create_time', 'pk')
 
-    ticket = models.OneToOneField(Ticket, on_delete=models.CASCADE, null=True, blank=True)
     create_time = models.DateTimeField(default=timezone.now)
     expire_time = models.DateTimeField(blank=True, null=True)
     is_paid = models.BooleanField(default=False)
+    ticket = models.OneToOneField(Ticket, on_delete=models.CASCADE, null=True, blank=True)
+    # ticket_info = models.ForeignKey(TicketInfo, related_name='reservations', on_delete=models.CASCADE)
+    # event = models.ForeignKey(Event, related_name='reservations', on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.ticket} {self.create_time} {self.expire_time} {self.is_paid}'
