@@ -24,7 +24,7 @@ class TicketInfoViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 
-    @action(detail=True, methods=['GET'])
+    @action(detail=True)
     def reserve(self, request, pk=None):
         try:
             ticket_info = TicketInfo.objects.get(pk=pk)
@@ -45,3 +45,21 @@ class TicketInfoViewSet(viewsets.ModelViewSet):
 class ReservationViewSet(viewsets.ModelViewSet):
     serializer_class = ReservationSerializer
     queryset = Reservation.objects.all()
+
+    @action(detail=True)
+    def pay(self, request, pk=None):
+        try:
+            reservation = Reservation.objects.get(pk=pk)
+        except Reservation.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        if reservation.is_paid:
+            data = {"error": "Unable to pay reservation", "message": "Reservation is already paid"}
+            return Response(data=data, status=status.HTTP_400_BAD_REQUEST)
+        elif reservation.ticket:
+            reservation.is_paid=True
+            reservation.save()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        else:
+            data = {"error": "Unable to pay reservation", "message": "Reservation is not longer valid"}
+            return Response(data=data, status=status.HTTP_400_BAD_REQUEST)
