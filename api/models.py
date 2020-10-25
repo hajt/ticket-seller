@@ -6,6 +6,26 @@ class Event(models.Model):
     name = models.CharField(max_length=100)
     date = models.DateTimeField(blank=True, null=True)
 
+    def get_total_reservations_count(self):
+        """ Function which returns total number of related reservation objects. """
+        return Reservation.objects.filter(ticket_info__event=self).count()
+
+    def get_valid_reservations_count(self):
+        """ Function which returns number of valid reservation objects. """
+        return Reservation.objects.filter(ticket_info__event=self, ticket__isnull=False).count()
+
+    def get_invalid_reservations_count(self):
+        """ Function which returns number of invalid reservation objects. """
+        return Reservation.objects.filter(ticket_info__event=self, ticket__isnull=True).count()
+
+    def get_paid_reservations_count(self):
+        """ Function which returns number of paid reservations. """
+        return Reservation.objects.filter(ticket_info__event=self, ticket__isnull=False, is_paid=True).count()
+
+    def get_unpaid_valid_reservations_count(self):
+        """ Function which returns number of unpaid but valid reservations. """
+        return Reservation.objects.filter(ticket_info__event=self, ticket__isnull=False, is_paid=False).count()
+    
 
     def __str__(self):
         return f'{self.name} {self.date}'
@@ -36,17 +56,22 @@ class TicketInfo(models.Model):
         """ Function which returns total number of related reservation objects. """
         return self.reservations.all().count()
 
+    def get_valid_reservations_count(self):
+        """ Function which returns number of valid reservation objects. """
+        return self.reservations.filter(ticket__isnull=False).count()   
+
+    def get_invalid_reservations_count(self):
+        """ Function which returns number of invalid reservation objects. """
+        return self.reservations.filter(ticket__isnull=True).count()
+
     def get_paid_reservations_count(self):
         """ Function which returns number of paid reservations. """
-        return self.reservations.filter(is_paid=True).count()
+        return self.reservations.filter(ticket__isnull=False, is_paid=True).count()
 
     def get_unpaid_valid_reservations_count(self):
         """ Function which returns number of unpaid but valid reservations. """
-        return self.reservations.filter(is_paid=False, ticket__isnull=False).count()
+        return self.reservations.filter(ticket__isnull=False, is_paid=False).count()
 
-    def get_invalid_reservations_count(self):
-        """ Function which returns number of invalid reservations. """
-        return self.reservations.filter(is_valid=False).count()
 
     def _create_tickets(self):
         """ Function which creates related ticket objects in accordance

@@ -10,7 +10,6 @@ router.register(r'events', EventViewSet)
 router.register(r'tickets', TicketInfoViewSet)
 router.register(r'reservations', ReservationViewSet)
 
-
 urlpatterns = [
     path('', include(router.urls)),
 ]

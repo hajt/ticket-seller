@@ -4,11 +4,11 @@ from api.models import Event, TicketInfo, Ticket, Reservation
 
 
 class EventSerializer(serializers.ModelSerializer):
-    tickets = serializers.SlugRelatedField(slug_field='kind', many=True, read_only=True)
+    tickets_info = serializers.SlugRelatedField(slug_field='kind', many=True, read_only=True)
     
     class Meta:
         model = Event
-        fields = ['name', 'date', 'tickets']
+        fields = ['name', 'date', 'tickets_info']
 
 
 class TicketInfoSerializer(serializers.ModelSerializer):
@@ -35,5 +35,3 @@ class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
         fields = ['event', 'kind', 'create_time', 'expire_time', 'is_paid', 'is_valid']
-
-        

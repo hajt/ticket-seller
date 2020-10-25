@@ -10,16 +10,63 @@ from api.serializers import EventSerializer, TicketInfoSerializer, ReservationSe
 
 class EventViewSet(viewsets.ModelViewSet):
     serializer_class = EventSerializer
-    queryset = Event.objects.all()
+    queryset = Event.objects.all()  
+
+    @action(detail=True)
+    def summary(self, request, pk=None):
+        try:
+            event = self.queryset.get(pk=pk)
+        except Event.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        
+        total = event.get_total_reservations_count()
+        valid = event.get_valid_reservations_count()
+        invalid = event.get_invalid_reservations_count()
+        paid = event.get_paid_reservations_count()
+        unpaid = event.get_unpaid_valid_reservations_count()
+        data = {
+            "reservations": {
+                "total": total,
+                "valid": valid,
+                "invalid": invalid,
+                "paid": paid,
+                "unpaid": unpaid
+            }   
+        }
+        return Response(data)
 
 
 class TicketInfoViewSet(viewsets.ModelViewSet):
     serializer_class = TicketInfoSerializer
     queryset = TicketInfo.objects.all()
 
+    @action(detail=True)
+    def summary(self, request, pk=None):
+        try:
+            ticket_info = self.queryset.get(pk=pk)
+        except TicketInfo.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        
+        total = ticket_info.get_total_reservations_count()
+        valid = ticket_info.get_valid_reservations_count()
+        invalid = ticket_info.get_invalid_reservations_count()
+        paid = ticket_info.get_paid_reservations_count()
+        unpaid = ticket_info.get_unpaid_valid_reservations_count()
+        data = {
+            "reservations": {
+                "total": total,
+                "valid": valid,
+                "invalid": invalid,
+                "paid": paid,
+                "unpaid": unpaid
+            }   
+        }
+        return Response(data)
+
+
     @action(detail=False)
     def available(self, request):
-        tickets = TicketInfo.objects.annotate(reserved_tickets=Count('tickets__reservation')).filter(reserved_tickets__lt=F('quantity')).order_by('event', 'kind')
+        tickets = self.queryset.annotate(reserved_tickets=Count('tickets__reservation')).filter(reserved_tickets__lt=F('quantity')).order_by('event', 'kind')
         serializer = self.get_serializer(tickets, many=True)
         return Response(serializer.data)
 
@@ -27,7 +74,7 @@ class TicketInfoViewSet(viewsets.ModelViewSet):
     @action(detail=True)
     def reserve(self, request, pk=None):
         try:
-            ticket_info = TicketInfo.objects.get(pk=pk)
+            ticket_info = self.queryset.get(pk=pk)
         except TicketInfo.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
@@ -49,7 +96,7 @@ class ReservationViewSet(viewsets.ModelViewSet):
     @action(detail=True)
     def pay(self, request, pk=None):
         try:
-            reservation = Reservation.objects.get(pk=pk)
+            reservation = self.queryset.objects.get(pk=pk)
         except Reservation.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
