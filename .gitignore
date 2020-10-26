@@ -3,3 +3,5 @@ api/migrations/
 api/__pycache__
 utils.py
 project/__pycache__
+todo
+celerybeat-schedule.*
