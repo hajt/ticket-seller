@@ -5,3 +5,4 @@ utils.py
 project/__pycache__
 todo
 celerybeat-schedule.*
+api/tests/__pycache__
