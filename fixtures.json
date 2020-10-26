@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
         "name": "Event One",
-        "date": "2021-01-30T17:56:58.048Z"
+        "date": "2021-02-02T23:57:03.903Z"
     }
 },
 {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
         "name": "Event Two",
-        "date": "2020-12-11T17:56:59.104Z"
+        "date": "2020-12-14T23:57:04.777Z"
     }
 },
 {
@@ -20,1782 +20,3266 @@
     "pk": 3,
     "fields": {
         "name": "Event Three",
-        "date": "2020-11-18T17:57:02.749Z"
+        "date": "2020-11-21T23:57:08.491Z"
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 1,
     "fields": {
-        "event": 1,
         "kind": "VIP",
         "price": "24.80",
-        "quantity": 5
+        "quantity": 5,
+        "event": 1
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 2,
     "fields": {
-        "event": 1,
         "kind": "Standard",
         "price": "10.00",
-        "quantity": 10
+        "quantity": 10,
+        "event": 1
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 3,
     "fields": {
-        "event": 1,
         "kind": "Cheap",
         "price": "5.00",
-        "quantity": 15
+        "quantity": 15,
+        "event": 1
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 4,
     "fields": {
-        "event": 2,
         "kind": "Limited",
         "price": "99.99",
-        "quantity": 3
+        "quantity": 3,
+        "event": 2
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 5,
     "fields": {
-        "event": 2,
         "kind": "Standard",
         "price": "50.00",
-        "quantity": 17
+        "quantity": 17,
+        "event": 2
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 6,
     "fields": {
-        "event": 2,
         "kind": "Free",
         "price": "0.00",
-        "quantity": 10
+        "quantity": 10,
+        "event": 2
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 7,
     "fields": {
-        "event": 2,
         "kind": "Premium",
         "price": "100.00",
-        "quantity": 100
+        "quantity": 100,
+        "event": 2
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 8,
     "fields": {
-        "event": 3,
         "kind": "VIP",
         "price": "100.00",
-        "quantity": 10
+        "quantity": 10,
+        "event": 3
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 9,
     "fields": {
-        "event": 3,
         "kind": "Student",
         "price": "64.99",
-        "quantity": 25
+        "quantity": 25,
+        "event": 3
     }
 },
 {
     "model": "api.ticketinfo",
     "pk": 10,
     "fields": {
-        "event": 3,
         "kind": "Normal",
         "price": "80.50",
-        "quantity": 40
+        "quantity": 40,
+        "event": 3
+    }
+},
+{
+    "model": "api.ticketinfo",
+    "pk": 11,
+    "fields": {
+        "kind": "Test",
+        "price": "2.00",
+        "quantity": 2,
+        "event": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 1,
     "fields": {
-        "info": 1
+        "ticket_info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 2,
     "fields": {
-        "info": 1
+        "ticket_info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 3,
     "fields": {
-        "info": 1
+        "ticket_info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 4,
     "fields": {
-        "info": 1
+        "ticket_info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 5,
     "fields": {
-        "info": 1
+        "ticket_info": 1
     }
 },
 {
     "model": "api.ticket",
     "pk": 6,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 7,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 8,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 9,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 10,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 11,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 12,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 13,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 14,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 15,
     "fields": {
-        "info": 2
+        "ticket_info": 2
     }
 },
 {
     "model": "api.ticket",
     "pk": 16,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 17,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 18,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 19,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 20,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 21,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 22,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 23,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 24,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 25,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 26,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 27,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 28,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 29,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 30,
     "fields": {
-        "info": 3
+        "ticket_info": 3
     }
 },
 {
     "model": "api.ticket",
     "pk": 31,
     "fields": {
-        "info": 4
+        "ticket_info": 4
     }
 },
 {
     "model": "api.ticket",
     "pk": 32,
     "fields": {
-        "info": 4
+        "ticket_info": 4
     }
 },
 {
     "model": "api.ticket",
     "pk": 33,
     "fields": {
-        "info": 4
+        "ticket_info": 4
     }
 },
 {
     "model": "api.ticket",
     "pk": 34,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 35,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 36,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 37,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 38,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 39,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 40,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 41,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 42,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 43,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 44,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 45,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 46,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 47,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 48,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 49,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 50,
     "fields": {
-        "info": 5
+        "ticket_info": 5
     }
 },
 {
     "model": "api.ticket",
     "pk": 51,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 52,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 53,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 54,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 55,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 56,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 57,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 58,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 59,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 60,
     "fields": {
-        "info": 6
+        "ticket_info": 6
     }
 },
 {
     "model": "api.ticket",
     "pk": 61,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 62,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 63,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 64,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 65,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 66,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 67,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 68,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 69,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 70,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 71,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 72,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 73,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 74,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 75,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 76,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 77,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 78,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 79,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 80,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 81,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 82,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 83,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 84,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 85,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 86,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 87,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 88,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 89,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 90,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 91,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 92,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 93,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 94,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 95,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 96,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 97,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 98,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 99,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 100,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 101,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 102,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 103,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 104,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 105,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 106,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 107,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 108,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 109,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 110,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 111,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 112,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 113,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 114,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 115,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 116,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 117,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 118,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 119,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 120,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 121,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 122,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 123,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 124,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 125,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 126,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 127,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 128,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 129,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 130,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 131,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 132,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 133,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 134,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 135,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 136,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 137,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 138,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 139,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 140,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 141,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 142,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 143,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 144,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 145,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 146,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 147,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 148,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 149,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 150,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 151,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 152,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 153,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 154,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 155,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 156,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 157,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 158,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 159,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 160,
     "fields": {
-        "info": 7
+        "ticket_info": 7
     }
 },
 {
     "model": "api.ticket",
     "pk": 161,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 162,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 163,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 164,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 165,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 166,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 167,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 168,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 169,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 170,
     "fields": {
-        "info": 8
+        "ticket_info": 8
     }
 },
 {
     "model": "api.ticket",
     "pk": 171,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 172,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 173,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 174,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 175,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 176,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 177,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 178,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 179,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 180,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 181,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 182,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 183,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 184,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 185,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 186,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 187,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 188,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 189,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 190,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 191,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 192,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 193,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 194,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 195,
     "fields": {
-        "info": 9
+        "ticket_info": 9
     }
 },
 {
     "model": "api.ticket",
     "pk": 196,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 197,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 198,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 199,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 200,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 201,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 202,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 203,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 204,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 205,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 206,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 207,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 208,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 209,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 210,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 211,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 212,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 213,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 214,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 215,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 216,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 217,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 218,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 219,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 220,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 221,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 222,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 223,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 224,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 225,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 226,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 227,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 228,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 229,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 230,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 231,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 232,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 233,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 234,
     "fields": {
-        "info": 10
+        "ticket_info": 10
     }
 },
 {
     "model": "api.ticket",
     "pk": 235,
     "fields": {
-        "info": 10
+        "ticket_info": 10
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 236,
+    "fields": {
+        "ticket_info": 11
+    }
+},
+{
+    "model": "api.ticket",
+    "pk": 237,
+    "fields": {
+        "ticket_info": 11
     }
 },
 {
     "model": "api.reservation",
     "pk": 1,
     "fields": {
-        "ticket": 196,
-        "create_time": "2020-10-22T17:57:05.058Z",
-        "expire_time": "2020-10-22T18:12:05.058Z",
-        "is_paid": "False"
+        "create_time": "2020-10-25T23:57:10.653Z",
+        "expire_time": "2020-10-26T00:12:10.653Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 1
     }
 },
 {
     "model": "api.reservation",
     "pk": 2,
     "fields": {
-        "ticket": 235,
-        "create_time": "2020-10-22T17:57:05.094Z",
-        "expire_time": "2020-10-22T18:12:05.094Z",
-        "is_paid": "False"
+        "create_time": "2020-10-25T23:57:10.687Z",
+        "expire_time": "2020-10-26T00:12:10.687Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 1
     }
 },
 {
     "model": "api.reservation",
     "pk": 3,
     "fields": {
-        "ticket": 20,
-        "create_time": "2020-10-22T17:57:05.158Z",
-        "expire_time": "2020-10-22T18:12:05.158Z",
-        "is_paid": "False"
+        "create_time": "2020-10-25T23:57:10.719Z",
+        "expire_time": "2020-10-26T00:12:10.719Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 1
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 4,
+    "fields": {
+        "create_time": "2020-10-25T23:57:10.748Z",
+        "expire_time": "2020-10-26T00:12:10.748Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 1
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 5,
+    "fields": {
+        "create_time": "2020-10-25T23:57:10.800Z",
+        "expire_time": "2020-10-26T00:12:10.800Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 11
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 6,
+    "fields": {
+        "create_time": "2020-10-25T23:57:10.832Z",
+        "expire_time": "2020-10-26T00:12:10.832Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 11
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 7,
+    "fields": {
+        "create_time": "2020-10-25T23:57:10.948Z",
+        "expire_time": "2020-10-26T00:12:10.948Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 11
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 8,
+    "fields": {
+        "create_time": "2020-10-26T11:40:06.912Z",
+        "expire_time": "2020-10-26T11:55:06.912Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 5
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 9,
+    "fields": {
+        "create_time": "2020-10-26T11:40:09.431Z",
+        "expire_time": "2020-10-26T11:55:09.431Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 5
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 10,
+    "fields": {
+        "create_time": "2020-10-26T13:05:51.702Z",
+        "expire_time": "2020-10-26T13:20:51.702Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 7
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 11,
+    "fields": {
+        "create_time": "2020-10-26T13:05:54.147Z",
+        "expire_time": "2020-10-26T13:20:54.147Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 7
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 12,
+    "fields": {
+        "create_time": "2020-10-26T13:05:56.003Z",
+        "expire_time": "2020-10-26T13:20:56.003Z",
+        "is_paid": true,
+        "ticket": 63,
+        "ticket_info": 7
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 13,
+    "fields": {
+        "create_time": "2020-10-26T13:05:57.102Z",
+        "expire_time": "2020-10-26T13:20:57.102Z",
+        "is_paid": true,
+        "ticket": 64,
+        "ticket_info": 7
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 14,
+    "fields": {
+        "create_time": "2020-10-26T13:31:33.805Z",
+        "expire_time": "2020-10-26T13:46:33.805Z",
+        "is_paid": true,
+        "ticket": 34,
+        "ticket_info": 5
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 15,
+    "fields": {
+        "create_time": "2020-10-26T13:35:35.814Z",
+        "expire_time": "2020-10-26T13:50:35.814Z",
+        "is_paid": true,
+        "ticket": 35,
+        "ticket_info": 5
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 16,
+    "fields": {
+        "create_time": "2020-10-26T13:35:37.344Z",
+        "expire_time": "2020-10-26T13:50:37.344Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 5
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 17,
+    "fields": {
+        "create_time": "2020-10-26T13:35:38.212Z",
+        "expire_time": "2020-10-26T13:50:38.212Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 5
+    }
+},
+{
+    "model": "api.reservation",
+    "pk": 18,
+    "fields": {
+        "create_time": "2020-10-26T13:35:38.834Z",
+        "expire_time": "2020-10-26T13:50:38.834Z",
+        "is_paid": false,
+        "ticket": null,
+        "ticket_info": 5
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 1,
+    "fields": {
+        "task_id": "5fb37ad7-8c46-4b87-a194-f31be8866f5a",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-25 23:56:11.785111+00:00\"",
+        "date_created": "2020-10-25T23:56:11.788Z",
+        "date_done": "2020-10-25T23:56:11.788Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 2,
+    "fields": {
+        "task_id": "344763f7-a7d5-4e7e-a743-308ae197c021",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-25 23:56:26.760295+00:00\"",
+        "date_created": "2020-10-25T23:56:26.761Z",
+        "date_done": "2020-10-25T23:56:26.762Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 3,
+    "fields": {
+        "task_id": "d15f76e6-0112-4802-b6cb-0de62090a965",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-25 23:56:41.770540+00:00\"",
+        "date_created": "2020-10-25T23:56:41.772Z",
+        "date_done": "2020-10-25T23:56:41.772Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 4,
+    "fields": {
+        "task_id": "e7dbd71e-f6d5-454f-9b0f-8edd61b446cc",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:33.284459+00:00\"",
+        "date_created": "2020-10-26T00:03:33.290Z",
+        "date_done": "2020-10-26T00:03:33.290Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 5,
+    "fields": {
+        "task_id": "731949c0-d639-4a24-80c5-2591ea0c3708",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:33.290896+00:00\"",
+        "date_created": "2020-10-26T00:03:33.333Z",
+        "date_done": "2020-10-26T00:03:33.333Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 6,
+    "fields": {
+        "task_id": "28fa73f6-2130-4aea-a642-5aad4c3f45d3",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:33.290774+00:00\"",
+        "date_created": "2020-10-26T00:03:33.333Z",
+        "date_done": "2020-10-26T00:03:33.333Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 7,
+    "fields": {
+        "task_id": "95937c5b-3a20-4f38-8cb5-b881eea30e95",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:33.334298+00:00\"",
+        "date_created": "2020-10-26T00:03:33.370Z",
+        "date_done": "2020-10-26T00:03:33.370Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 8,
+    "fields": {
+        "task_id": "c627837e-41ad-4c18-9bc8-1ba612d9e5ae",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:33.291068+00:00\"",
+        "date_created": "2020-10-26T00:03:33.336Z",
+        "date_done": "2020-10-26T00:03:33.336Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 9,
+    "fields": {
+        "task_id": "0d584ae8-8882-491e-b808-399c825cc495",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:33.366974+00:00\"",
+        "date_created": "2020-10-26T00:03:33.369Z",
+        "date_done": "2020-10-26T00:03:33.369Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 10,
+    "fields": {
+        "task_id": "685672fb-de26-4111-a1e2-ca9635253c79",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:33.415304+00:00\"",
+        "date_created": "2020-10-26T00:03:33.417Z",
+        "date_done": "2020-10-26T00:03:33.417Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 11,
+    "fields": {
+        "task_id": "fbbd54b2-ac8f-4019-a4b8-a7f1390fae43",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:42.773947+00:00\"",
+        "date_created": "2020-10-26T00:03:42.775Z",
+        "date_done": "2020-10-26T00:03:42.775Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 12,
+    "fields": {
+        "task_id": "21e4dab9-899b-4da8-b1c2-6cc08680bbe1",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:03:57.775286+00:00\"",
+        "date_created": "2020-10-26T00:03:57.780Z",
+        "date_done": "2020-10-26T00:03:57.780Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 13,
+    "fields": {
+        "task_id": "9be65550-a359-4c3d-989a-2fbba8766e85",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:04:12.809327+00:00\"",
+        "date_created": "2020-10-26T00:04:12.813Z",
+        "date_done": "2020-10-26T00:04:12.813Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 14,
+    "fields": {
+        "task_id": "f7c3c532-9e49-4a16-8700-f12ccd9ef3f1",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:04:27.787944+00:00\"",
+        "date_created": "2020-10-26T00:04:27.790Z",
+        "date_done": "2020-10-26T00:04:27.790Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 15,
+    "fields": {
+        "task_id": "29202dad-c952-4f1d-bd5b-f62be1e5e998",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:04:42.783643+00:00\"",
+        "date_created": "2020-10-26T00:04:42.785Z",
+        "date_done": "2020-10-26T00:04:42.785Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 16,
+    "fields": {
+        "task_id": "a5e4c2df-05f5-4b5f-abcb-136655543dbb",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:04:57.783984+00:00\"",
+        "date_created": "2020-10-26T00:04:57.787Z",
+        "date_done": "2020-10-26T00:04:57.787Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 17,
+    "fields": {
+        "task_id": "6d9f3b27-88bd-4a68-87b6-e3530e261667",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:05:12.789389+00:00\"",
+        "date_created": "2020-10-26T00:05:12.792Z",
+        "date_done": "2020-10-26T00:05:12.793Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 18,
+    "fields": {
+        "task_id": "95f9495e-f664-45c0-9506-5341c647ebab",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:05:27.794082+00:00\"",
+        "date_created": "2020-10-26T00:05:27.795Z",
+        "date_done": "2020-10-26T00:05:27.795Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 19,
+    "fields": {
+        "task_id": "b3d18d24-e0bd-42f0-9e29-9b56fa2abbbe",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:05:42.788397+00:00\"",
+        "date_created": "2020-10-26T00:05:42.790Z",
+        "date_done": "2020-10-26T00:05:42.790Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 20,
+    "fields": {
+        "task_id": "e8bd53b1-f5d5-47b4-b484-05c3556f6753",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:05:57.800012+00:00\"",
+        "date_created": "2020-10-26T00:05:57.802Z",
+        "date_done": "2020-10-26T00:05:57.802Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 21,
+    "fields": {
+        "task_id": "d6d72c0d-2725-4d0b-9962-15d7742f6416",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:06:12.798571+00:00\"",
+        "date_created": "2020-10-26T00:06:12.801Z",
+        "date_done": "2020-10-26T00:06:12.801Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 22,
+    "fields": {
+        "task_id": "23bb988c-148a-41ac-845d-6a446e3a6c2a",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:06:27.802679+00:00\"",
+        "date_created": "2020-10-26T00:06:27.805Z",
+        "date_done": "2020-10-26T00:06:27.805Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 23,
+    "fields": {
+        "task_id": "c5422b0d-c354-4824-872d-27b3a22033b9",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:06:42.807392+00:00\"",
+        "date_created": "2020-10-26T00:06:42.808Z",
+        "date_done": "2020-10-26T00:06:42.809Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 24,
+    "fields": {
+        "task_id": "ee673302-0cd9-4bda-99bc-da6b06abee41",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:06:57.815520+00:00\"",
+        "date_created": "2020-10-26T00:06:57.817Z",
+        "date_done": "2020-10-26T00:06:57.817Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 25,
+    "fields": {
+        "task_id": "8602a2b0-dbdd-4944-94a5-458a7e779bbd",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:07:12.814538+00:00\"",
+        "date_created": "2020-10-26T00:07:12.816Z",
+        "date_done": "2020-10-26T00:07:12.816Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 26,
+    "fields": {
+        "task_id": "eb343be7-c686-46be-8d47-d15e375727de",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:07:27.820131+00:00\"",
+        "date_created": "2020-10-26T00:07:27.822Z",
+        "date_done": "2020-10-26T00:07:27.822Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 27,
+    "fields": {
+        "task_id": "c7b564eb-fc8c-4fc4-ac96-82a229d46ca4",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:07:42.827976+00:00\"",
+        "date_created": "2020-10-26T00:07:42.830Z",
+        "date_done": "2020-10-26T00:07:42.830Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 28,
+    "fields": {
+        "task_id": "19f43364-42da-46a2-b1f2-469ab58b744b",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:07:57.834117+00:00\"",
+        "date_created": "2020-10-26T00:07:57.835Z",
+        "date_done": "2020-10-26T00:07:57.835Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 29,
+    "fields": {
+        "task_id": "3fbd5cd2-ba23-46b0-a785-28add0acc3f1",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:08:12.831707+00:00\"",
+        "date_created": "2020-10-26T00:08:12.833Z",
+        "date_done": "2020-10-26T00:08:12.833Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 30,
+    "fields": {
+        "task_id": "506dad54-74a3-4e79-bee8-dff87415008c",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:08:27.838885+00:00\"",
+        "date_created": "2020-10-26T00:08:27.840Z",
+        "date_done": "2020-10-26T00:08:27.840Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 31,
+    "fields": {
+        "task_id": "8f0beedf-3040-47bb-bc66-fa7d68aaa5dc",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:08:42.842114+00:00\"",
+        "date_created": "2020-10-26T00:08:42.844Z",
+        "date_done": "2020-10-26T00:08:42.844Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 32,
+    "fields": {
+        "task_id": "7f3427f8-c666-4a27-8d95-6eb78802cccb",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:08:57.839550+00:00\"",
+        "date_created": "2020-10-26T00:08:57.841Z",
+        "date_done": "2020-10-26T00:08:57.841Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 33,
+    "fields": {
+        "task_id": "6aac0114-1321-4310-a4e8-880ba3b86c6d",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:09:12.853602+00:00\"",
+        "date_created": "2020-10-26T00:09:12.855Z",
+        "date_done": "2020-10-26T00:09:12.855Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 34,
+    "fields": {
+        "task_id": "6796c3aa-8cee-4c95-8e5f-c228c3ce32c6",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:09:27.858115+00:00\"",
+        "date_created": "2020-10-26T00:09:27.859Z",
+        "date_done": "2020-10-26T00:09:27.859Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 35,
+    "fields": {
+        "task_id": "15dd03cc-5023-4798-8709-78cc62e48d7e",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:09:42.864881+00:00\"",
+        "date_created": "2020-10-26T00:09:42.867Z",
+        "date_done": "2020-10-26T00:09:42.867Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 36,
+    "fields": {
+        "task_id": "6d294329-ff2f-41f5-b781-d91148152c74",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:09:57.863290+00:00\"",
+        "date_created": "2020-10-26T00:09:57.865Z",
+        "date_done": "2020-10-26T00:09:57.865Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 37,
+    "fields": {
+        "task_id": "3d661fc1-e999-4a1e-9938-7173c8f6b921",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:10:12.870072+00:00\"",
+        "date_created": "2020-10-26T00:10:12.871Z",
+        "date_done": "2020-10-26T00:10:12.871Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 38,
+    "fields": {
+        "task_id": "c8fd1da0-e8c0-462b-83a0-4b669b0c17dd",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:10:27.874979+00:00\"",
+        "date_created": "2020-10-26T00:10:27.876Z",
+        "date_done": "2020-10-26T00:10:27.876Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 39,
+    "fields": {
+        "task_id": "89a99770-e30c-436d-8a8b-a4da64502a16",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:10:42.879049+00:00\"",
+        "date_created": "2020-10-26T00:10:42.880Z",
+        "date_done": "2020-10-26T00:10:42.880Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 40,
+    "fields": {
+        "task_id": "e2bdd0f8-5e3a-4e27-94d9-33cdaf35f452",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:10:57.882009+00:00\"",
+        "date_created": "2020-10-26T00:10:57.884Z",
+        "date_done": "2020-10-26T00:10:57.884Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 41,
+    "fields": {
+        "task_id": "028a877c-1173-448b-8c47-94beade16430",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:11:12.879716+00:00\"",
+        "date_created": "2020-10-26T00:11:12.881Z",
+        "date_done": "2020-10-26T00:11:12.881Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 42,
+    "fields": {
+        "task_id": "f461f742-1da6-4e0e-a4b6-fa9e7c28a7c3",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:11:27.883136+00:00\"",
+        "date_created": "2020-10-26T00:11:27.884Z",
+        "date_done": "2020-10-26T00:11:27.884Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 43,
+    "fields": {
+        "task_id": "0ed14988-a49d-4eb6-9330-416ab30d5219",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:11:42.887300+00:00\"",
+        "date_created": "2020-10-26T00:11:42.889Z",
+        "date_done": "2020-10-26T00:11:42.889Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 44,
+    "fields": {
+        "task_id": "865b9140-cfff-4528-b2cd-e2d33efb67f4",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:11:57.894429+00:00\"",
+        "date_created": "2020-10-26T00:11:57.896Z",
+        "date_done": "2020-10-26T00:11:57.896Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 45,
+    "fields": {
+        "task_id": "1589cc1e-da73-4b7a-a7cf-4c6430133770",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:12:12.895396+00:00\"",
+        "date_created": "2020-10-26T00:12:12.898Z",
+        "date_done": "2020-10-26T00:12:12.898Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 46,
+    "fields": {
+        "task_id": "580c69f3-d062-46f1-8b70-f2e94ef2a235",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:12:27.905868+00:00\"",
+        "date_created": "2020-10-26T00:12:27.907Z",
+        "date_done": "2020-10-26T00:12:27.907Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 47,
+    "fields": {
+        "task_id": "aee30c21-1b68-4c41-9035-01b1103a242d",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:12:42.903027+00:00\"",
+        "date_created": "2020-10-26T00:12:42.904Z",
+        "date_done": "2020-10-26T00:12:42.904Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 48,
+    "fields": {
+        "task_id": "552949e3-eb71-495b-bf24-325c5ca47c0f",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:12:57.910982+00:00\"",
+        "date_created": "2020-10-26T00:12:57.912Z",
+        "date_done": "2020-10-26T00:12:57.912Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 49,
+    "fields": {
+        "task_id": "ee399cd2-a526-4e56-a1ea-de7fe93d891a",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:13:12.914252+00:00\"",
+        "date_created": "2020-10-26T00:13:12.915Z",
+        "date_done": "2020-10-26T00:13:12.915Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 50,
+    "fields": {
+        "task_id": "a4ed8914-a38e-4592-8155-a697e55c753a",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:13:27.922635+00:00\"",
+        "date_created": "2020-10-26T00:13:27.924Z",
+        "date_done": "2020-10-26T00:13:27.924Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 51,
+    "fields": {
+        "task_id": "fbd706b4-3df4-4046-98e5-f3f55a308be6",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:13:42.925556+00:00\"",
+        "date_created": "2020-10-26T00:13:42.928Z",
+        "date_done": "2020-10-26T00:13:42.929Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 52,
+    "fields": {
+        "task_id": "aed064d0-4c88-4d21-adc5-49b98967d836",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released expired reservations at 2020-10-26 00:13:57.928821+00:00\"",
+        "date_created": "2020-10-26T00:13:57.933Z",
+        "date_done": "2020-10-26T00:13:57.933Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 53,
+    "fields": {
+        "task_id": "237bb56d-3dbd-4284-bcaf-0c8641d618f1",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:00:27.395Z",
+        "date_done": "2020-10-26T13:00:27.395Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 54,
+    "fields": {
+        "task_id": "19416605-98fb-4cc3-85c8-9eb7365c1a10",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:00:27.395Z",
+        "date_done": "2020-10-26T13:00:27.395Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 55,
+    "fields": {
+        "task_id": "191fb25a-aaea-4fd7-adae-09b1967223f3",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:00:29.523Z",
+        "date_done": "2020-10-26T13:00:29.523Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 56,
+    "fields": {
+        "task_id": "ccfdb952-af25-4f8b-bdf2-26124a93a0d0",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:00:44.526Z",
+        "date_done": "2020-10-26T13:00:44.527Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 57,
+    "fields": {
+        "task_id": "41ac91cf-b0a7-4e90-80d8-d7b271867d90",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:00:59.525Z",
+        "date_done": "2020-10-26T13:00:59.525Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 58,
+    "fields": {
+        "task_id": "143930a4-e639-41d0-a6b8-140aba920e84",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:01:14.532Z",
+        "date_done": "2020-10-26T13:01:14.532Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 59,
+    "fields": {
+        "task_id": "24edd394-c3ec-474a-a9fd-5c45e0e20ced",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:01:29.538Z",
+        "date_done": "2020-10-26T13:01:29.538Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 60,
+    "fields": {
+        "task_id": "282195fe-7955-4205-96d4-8a174bd9c6c6",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:01:44.540Z",
+        "date_done": "2020-10-26T13:01:44.540Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 61,
+    "fields": {
+        "task_id": "8979c7bb-4a0f-4305-9b3a-e20e5d69b0ea",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:01:59.546Z",
+        "date_done": "2020-10-26T13:01:59.546Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 62,
+    "fields": {
+        "task_id": "a206ef9f-a92b-43aa-96ca-00157e2155db",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:02:17.001Z",
+        "date_done": "2020-10-26T13:02:17.001Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 63,
+    "fields": {
+        "task_id": "904f6b84-10e2-4849-b23e-56546f8abbf2",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released 0 expired reservations at 2020-10-26 13:04:54.734088+00:00\"",
+        "date_created": "2020-10-26T13:04:54.740Z",
+        "date_done": "2020-10-26T13:04:54.740Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 64,
+    "fields": {
+        "task_id": "53f4652f-5642-4e69-9ac8-a3f7b6e7ca31",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:05:09.687Z",
+        "date_done": "2020-10-26T13:05:09.688Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 65,
+    "fields": {
+        "task_id": "b48f9383-de13-4dfd-a0a2-e12691aa9863",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T13:05:24.693Z",
+        "date_done": "2020-10-26T13:05:24.693Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 66,
+    "fields": {
+        "task_id": "6b425605-1243-438f-a701-7b22602da967",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"Released 5 expired reservations\"",
+        "date_created": "2020-10-26T14:01:25.594Z",
+        "date_done": "2020-10-26T14:01:25.594Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 67,
+    "fields": {
+        "task_id": "7a22fa61-6f25-4424-871b-111ecf37f3c3",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T14:01:40.529Z",
+        "date_done": "2020-10-26T14:01:40.529Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
+    }
+},
+{
+    "model": "django_celery_results.taskresult",
+    "pk": 68,
+    "fields": {
+        "task_id": "0649e8b1-7ecd-4e43-9092-4e6b8285847a",
+        "task_name": "api.tasks.release_expired_reservations",
+        "task_args": "()",
+        "task_kwargs": "{}",
+        "status": "SUCCESS",
+        "worker": "celery@Ultra7",
+        "content_type": "application/json",
+        "content_encoding": "utf-8",
+        "result": "\"No expired reservations\"",
+        "date_created": "2020-10-26T14:01:55.531Z",
+        "date_done": "2020-10-26T14:01:55.531Z",
+        "traceback": null,
+        "meta": "{\"children\": []}"
     }
 }
 ]

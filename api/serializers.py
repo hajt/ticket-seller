@@ -35,3 +35,9 @@ class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
         fields = ['event', 'kind', 'create_time', 'expire_time', 'is_paid', 'is_valid']
+
+
+class PaymentSerializer(serializers.Serializer):
+    amount = serializers.IntegerField()
+    currency = serializers.CharField(max_length=10, required=False)
+    token = serializers.CharField(max_length=20, required=False)
