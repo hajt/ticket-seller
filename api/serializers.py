@@ -12,14 +12,14 @@ class EventSerializer(serializers.ModelSerializer):
 
 
 class TicketInfoSerializer(serializers.ModelSerializer):
-    event = serializers.SlugRelatedField(slug_field='name', read_only=True)
+    event = serializers.SlugRelatedField(queryset=Event.objects.all(), slug_field='name')
     left = serializers.IntegerField(source='get_available_tickets_count', read_only=True)
 
     class Meta:
         model = TicketInfo
         fields = ['kind', 'event', 'price', 'quantity', 'left']
 
-
+        
 class TicketSerializer(serializers.ModelSerializer):
     
     class Meta:
