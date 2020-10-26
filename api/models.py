@@ -3,8 +3,15 @@ from django.utils import timezone
 
 
 class Event(models.Model):
+    """ Events model class. """
     name = models.CharField(max_length=100)
     date = models.DateTimeField(blank=True, null=True)
+
+    def __str__(self):
+        return f"Event: '{self.name}', date: {self.date}"
+
+    def __repr__(self):
+        return f"<Event(name='{self.name}', date='{self.date}')>"
 
     def get_total_reservations_count(self):
         """ Function which returns total number of related reservation objects. """
@@ -25,16 +32,10 @@ class Event(models.Model):
     def get_unpaid_valid_reservations_count(self):
         """ Function which returns number of unpaid but valid reservations. """
         return Reservation.objects.filter(ticket_info__event=self, ticket__isnull=False, is_paid=False).count()
-    
-
-    def __str__(self):
-        return f'{self.name} {self.date}'
-
-    def __repr__(self):
-        return f"<Event(name='{self.name}', date='{self.date}')>"
 
 
 class TicketInfo(models.Model):
+    """ Tickets description model class. """
     class Meta:
         ordering = ('event', 'kind')
 
@@ -43,6 +44,11 @@ class TicketInfo(models.Model):
     quantity = models.IntegerField(null=False, blank=False)
     event = models.ForeignKey(Event, related_name='tickets_info', on_delete=models.PROTECT)
 
+    def __str__(self):
+        return f"Ticket {self.kind}, price: {self.price}"
+
+    def __repr__(self):
+        return f"<TicketInfo(kind='{self.kind}', price='{self.price}', quantity='{self.quantity}')>"
 
     def get_total_tickets_count(self):
         """ Function which returns total number of related ticket objects. """
@@ -72,39 +78,29 @@ class TicketInfo(models.Model):
         """ Function which returns number of unpaid but valid reservations. """
         return self.reservations.filter(ticket__isnull=False, is_paid=False).count()
 
+    def save(self, **kwargs):
+        """ Overwriting behavior of built-in 'save' method. """ 
+        super(TicketInfo, self).save(**kwargs)
+        self._create_tickets()
 
     def _create_tickets(self):
         """ Function which creates related ticket objects in accordance
         to model's own 'quanity' parameter. """
         tickets_total = self.get_total_tickets_count()
         if tickets_total < self.quantity:
-            for _ in range(self.quantity-tickets_total):
-                ticket = Ticket(ticket_info=self)
-                ticket.save()
-
-    def save(self, **kwargs):
-        super(TicketInfo, self).save(**kwargs)
-        self._create_tickets()
-
-    def __str__(self):
-        return f"Ticket: '{self.kind}' Event: '{self.event.name}' Price: '{self.price}'"
-
-    def __repr__(self):
-        return f"<TicketInfo(event='{self.event}', kind='{self.kind}', price='{self.price}', quantity='{self.quantity}')>"
-
+            Ticket.objects.bulk_create([Ticket(ticket_info=self) for _ in range(self.quantity-tickets_total)])
+    
 
 class Ticket(models.Model):
+    """ Tickets vessel model class. """
     ticket_info = models.ForeignKey(TicketInfo, related_name='tickets', on_delete=models.CASCADE)
 
-
-    def __str__(self):
-        return f'{self.ticket_info}'
-
     def __repr__(self):
-        return f"<Ticket(ticket_info='{self.ticket_info}')>"
+        return "<Ticket>"
 
 
 class Reservation(models.Model):
+    """ Reservations model class. """
     class Meta:
         ordering = ('create_time', 'pk')
 
@@ -114,6 +110,11 @@ class Reservation(models.Model):
     ticket = models.OneToOneField(Ticket, on_delete=models.CASCADE, null=True, blank=True)
     ticket_info = models.ForeignKey(TicketInfo, related_name='reservations', on_delete=models.CASCADE)
 
+    def __str__(self):
+        return f"Reservation created at {self.create_time} expires at {self.expire_time}, was paid {self.is_paid}"
+
+    def __repr__(self):
+        return f"<Reservation(create_time='{self.create_time}', expire_time='{self.expire_time}', is_paid='{self.is_paid}')>"
 
     def check_is_valid(self):
         """ Function which returns True when reservation have relation to Ticket object. """
@@ -126,9 +127,3 @@ class Reservation(models.Model):
     def get_ticket_kind(self):
         """ Function which returns kind of related TicketInfo object. """
         return self.ticket_info.kind
-
-    def __str__(self):
-        return f'{self.ticket} {self.create_time} {self.expire_time} {self.is_paid}'
-
-    def __repr__(self):
-        return f"<Reservation(ticket='{self.ticket}', create_time='{self.create_time}', expire_time='{self.expire_time}', is_paid='{self.is_paid}')>"

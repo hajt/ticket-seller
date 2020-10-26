@@ -11,12 +11,15 @@ from api.payment_gateway import PaymentGateway
 
 
 class EventViewSet(viewsets.ModelViewSet):
+    """ Viewsets for manage events. """
     serializer_class = EventSerializer
     queryset = Event.objects.all()  
 
   
     @action(detail=True)
     def summary(self, request, pk=None):
+        """ Endpoint function which returns summary of reservations 
+        for specific event. """
         try:
             event = Event.objects.get(pk=pk)
         except Event.DoesNotExist:
@@ -40,6 +43,7 @@ class EventViewSet(viewsets.ModelViewSet):
 
 
 class TicketInfoViewSet(viewsets.ModelViewSet):
+    """ Viewsets for manage tickets. """
     serializer_class = TicketInfoSerializer
     queryset = TicketInfo.objects.all()
 
@@ -60,6 +64,8 @@ class TicketInfoViewSet(viewsets.ModelViewSet):
 
     @action(detail=True)
     def summary(self, request, pk=None):
+        """ Endpoint function which returns reservations 
+        statistics for specific ticket kind. """
         try:
             ticket_info = TicketInfo.objects.get(pk=pk)
         except TicketInfo.DoesNotExist:
@@ -84,6 +90,7 @@ class TicketInfoViewSet(viewsets.ModelViewSet):
 
     @action(detail=False)
     def available(self, request):
+        """ Endpoint function which returns list of only available tickets. """
         tickets = TicketInfo.objects.annotate(reserved_tickets=Count('tickets__reservation')).filter(reserved_tickets__lt=F('quantity')).order_by('event', 'kind')
         serializer = self.get_serializer(tickets, many=True)
         return Response(serializer.data)
@@ -91,6 +98,7 @@ class TicketInfoViewSet(viewsets.ModelViewSet):
 
     @action(detail=True)
     def reserve(self, request, pk=None):
+        """ Endpoint function which handles ticket reservation. """
         try:
             ticket_info = TicketInfo.objects.get(pk=pk)
         except TicketInfo.DoesNotExist:
@@ -108,11 +116,13 @@ class TicketInfoViewSet(viewsets.ModelViewSet):
 
 
 class ReservationViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.RetrieveModelMixin):
+    """ List and retrive viewsets for reservations. """
     serializer_class = ReservationSerializer
     queryset = Reservation.objects.all()
 
 
     def get_queryset(self):
+        """ Retrive Reservations objects. """
         ticket_info_pk = self.request.query_params.get('ticket')
 
         if ticket_info_pk:
@@ -128,6 +138,8 @@ class ReservationViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.
 
     @action(detail=True, methods=['POST'])
     def pay(self, request, pk=None):
+        """ Endpoint function which handles payment for reservation 
+        and updates object status in database. """
         try:
             reservation = Reservation.objects.get(pk=pk)
         except Reservation.DoesNotExist:
