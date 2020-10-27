@@ -124,16 +124,6 @@
     }
 },
 {
-    "model": "api.ticketinfo",
-    "pk": 11,
-    "fields": {
-        "kind": "Test",
-        "price": "2.00",
-        "quantity": 2,
-        "event": 3
-    }
-},
-{
     "model": "api.ticket",
     "pk": 1,
     "fields": {
@@ -1779,20 +1769,6 @@
     }
 },
 {
-    "model": "api.ticket",
-    "pk": 236,
-    "fields": {
-        "ticket_info": 11
-    }
-},
-{
-    "model": "api.ticket",
-    "pk": 237,
-    "fields": {
-        "ticket_info": 11
-    }
-},
-{
     "model": "api.reservation",
     "pk": 1,
     "fields": {
@@ -1834,39 +1810,6 @@
         "is_paid": false,
         "ticket": null,
         "ticket_info": 1
-    }
-},
-{
-    "model": "api.reservation",
-    "pk": 5,
-    "fields": {
-        "create_time": "2020-10-25T23:57:10.800Z",
-        "expire_time": "2020-10-26T00:12:10.800Z",
-        "is_paid": false,
-        "ticket": null,
-        "ticket_info": 11
-    }
-},
-{
-    "model": "api.reservation",
-    "pk": 6,
-    "fields": {
-        "create_time": "2020-10-25T23:57:10.832Z",
-        "expire_time": "2020-10-26T00:12:10.832Z",
-        "is_paid": false,
-        "ticket": null,
-        "ticket_info": 11
-    }
-},
-{
-    "model": "api.reservation",
-    "pk": 7,
-    "fields": {
-        "create_time": "2020-10-25T23:57:10.948Z",
-        "expire_time": "2020-10-26T00:12:10.948Z",
-        "is_paid": false,
-        "ticket": null,
-        "ticket_info": 11
     }
 },
 {
