@@ -6,3 +6,4 @@ project/__pycache__
 todo
 celerybeat-schedule.*
 api/tests/__pycache__
+.vscode
